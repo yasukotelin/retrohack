@@ -71,9 +71,6 @@ hi ErrorMsg		          gui=none guifg=#ffffff guibg=#ff0000 term=none cterm=none
 hi Cursor	              guifg=#000000 guibg=yellow ctermfg=16 ctermbg=yellow
 hi lCursor	            guifg=#000000 guibg=#ffffff ctermfg=16 ctermbg=231
 
-hi clear CursorColumn
-hi CursorLine           gui=underline term=underline cterm=underline
-
 hi Title			          gui=none guifg=#ff00d7 guibg=#00005f term=none cterm=none ctermfg=201 ctermbg=17
 
 hi Visual		            gui=none guifg=#ffffff guibg=#87afff term=none cterm=none ctermfg=231 ctermbg=111
@@ -81,7 +78,11 @@ hi VisualNOS	          gui=none guifg=#ffffff guibg=#87afff term=none cterm=none
 hi Search		            gui=none guibg=#ffff80 term=none cterm=none ctermfg=16 ctermbg=227
 hi IncSearch	          gui=none guibg=#d7d7af term=none cterm=none ctermfg=16 ctermbg=187
 
+hi clear CursorColumn
 hi LineNr	              gui=none guifg=#87ff00 guibg=#00005f term=none cterm=none ctermfg=118 ctermbg=17
+hi CursorLine           gui=underline term=underline cterm=underline
+hi CursorLineNr         gui=bold guifg=#ffff5f term=bold cterm=bold ctermfg=227
+
 hi StatusLine	          gui=none guifg=#0000ff guibg=#a8a8a8 term=none cterm=none ctermfg=21 ctermbg=248
 hi StatusLineNC         gui=none guifg=#000000 guibg=#a8a8a8 term=none cterm=none ctermfg=16 ctermbg=248
 hi VertSplit            gui=none guifg=#000000 guibg=#a8a8a8 term=none cterm=none ctermfg=16 ctermbg=248 
@@ -94,16 +95,19 @@ hi Pmenu                gui=none guifg=#ffffff guibg=#000000 term=none cterm=non
 hi PmenuSel             gui=none guifg=#ffffff guibg=#585858 term=none cterm=none ctermfg=231 ctermbg=240
 hi PmenuSbar            gui=none guibg=#626262 term=none cterm=none ctermbg=241
 hi PmenuThumb           gui=none guifg=#d0d0d0 term=none cterm=none ctermbg=252
+hi WildMenu			        gui=none guifg=#ffff00 guibg=#000000 cterm=none term=none ctermfg=226 ctermbg=16
+
+hi MatchParen           gui=none guibg=#585858 term=none cterm=none ctermbg=240
+hi Directory		        gui=none guifg=#00ffff term=none cterm=none ctermfg=51
+hi Question			        gui=none guifg=#00ff00 term=none cterm=none ctermfg=46 
+hi EndOfBuffer          gui=none guifg=#767676 term=none cterm=none ctermfg=243
 
 hi SpecialKey	          gui=none guifg=#00ffff term=none cterm=none ctermfg=51 
-hi Directory		        gui=none guifg=#00ffff term=none cterm=none ctermfg=51
+hi NonText			        gui=none guifg=#0000af term=none cterm=none ctermfg=19
+
 hi WarningMsg		        gui=none guifg=#ffffff guibg=#ff0000 term=none cterm=none ctermfg=196 ctermbg=17
-hi WildMenu			        gui=none guifg=#ffff00 guibg=#000000 cterm=none term=none ctermfg=226 ctermbg=16
 hi ModeMsg			        gui=none guifg=#00ffff term=none cterm=none ctermfg=51
 hi MoreMsg			        gui=none guifg=#00ffff term=none cterm=none ctermfg=51
-hi Question			        gui=none guifg=#00ff00 term=none cterm=none ctermfg=46 
-hi NonText			        gui=none guifg=#0000af term=none cterm=none ctermfg=19
-" hi EndOfBuffer
 
 hi DiffAdd	guibg=darkblue	ctermbg=darkblue term=none cterm=none
 hi DiffChange	guibg=darkmagenta ctermbg=magenta cterm=none
