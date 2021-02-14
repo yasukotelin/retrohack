@@ -64,7 +64,7 @@ hi Ignore	              guifg=bg ctermfg=17
 hi Todo			            gui=none guifg=#ff0000 guibg=#005faf term=none cterm=none	ctermfg=196	ctermbg=25
 
 hi Normal		            gui=none guifg=#dadada guibg=#00005f term=none cterm=none ctermfg=253 ctermbg=17
-hi ErrorMsg		          gui=none guifg=#ffffff guibg=#ff0000 term=none cterm=none ctermfg=196 ctermbg=17
+hi link ErrorMsg Error
 
 """"""""""""""""""""""
 " highlight-groups
@@ -111,9 +111,15 @@ hi WarningMsg		        gui=none guifg=#ffffff guibg=#ff0000 term=none cterm=none
 hi ModeMsg			        gui=none guifg=#00ffff term=none cterm=none ctermfg=51
 hi MoreMsg			        gui=none guifg=#00ffff term=none cterm=none ctermfg=51
 
-hi DiffAdd	guibg=darkblue	ctermbg=darkblue term=none cterm=none
-hi DiffChange	guibg=darkmagenta ctermbg=magenta cterm=none
-hi DiffDelete	ctermfg=blue ctermbg=cyan gui=bold guifg=Blue guibg=DarkCyan
-hi DiffText	cterm=bold ctermbg=red gui=bold guibg=Red
+hi DiffAdd	            gui=none term=none cterm=none ctermbg=22
+hi DiffChange	          gui=none term=none cterm=none ctermbg=22
+hi DiffDelete	          gui=none term=none cterm=none ctermbg=89
+hi DiffText	            gui=none term=none cterm=none ctermbg=28
 
+" hi DiffAdd term=NONE cterm=NONE ctermbg=194 guibg=#C8FFC8
+" hi DiffChange term=NONE cterm=NONE ctermbg=194 guibg=#C8FFC8
+" hi DiffDelete term=NONE cterm=NONE ctermbg=224 ctermfg=224 gui=NONE guibg=#FFC8C8 guifg=#FFC8C8
+" hi DiffText term=NONE cterm=NONE ctermbg=84 gui=NONE guibg=#60FF87
+
+hi Error                gui=none guifg=#ffffff guibg=#ff0000 term=none cterm=none ctermfg=196 ctermbg=17
 
