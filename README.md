@@ -52,6 +52,8 @@ set nocursorline
 
 <img src="./images/screenshot.png" />
 
+<img src="./images/diff.png" alt="diff image">
+
 ## Licence
 
 MIT Licence
